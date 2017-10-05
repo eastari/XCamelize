@@ -1,1 +1,1 @@
-XCamelize 
+XCamelize !
