@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D23EE4D31F29DE9800965DE8 /* camelizeVideo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D23EE4D21F29DE9800965DE8 /* camelizeVideo.gif */; };
+		D27EB9F41F276D750046C037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EB9F31F276D750046C037 /* AppDelegate.swift */; };
+		D27EB9F61F276D750046C037 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EB9F51F276D750046C037 /* ViewController.swift */; };
+		D27EB9F81F276D750046C037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27EB9F71F276D750046C037 /* Assets.xcassets */; };
+		D27EB9FB1F276D750046C037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27EB9F91F276D750046C037 /* Main.storyboard */; };
+		D27EBA061F276D750046C037 /* XCamelizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EBA051F276D750046C037 /* XCamelizeTests.swift */; };
+		D27EBA111F276D750046C037 /* XCamelizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EBA101F276D750046C037 /* XCamelizeUITests.swift */; };
+		D27EBA251F276E3F0046C037 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27EBA241F276E3F0046C037 /* Cocoa.framework */; };
+		D27EBA2A1F276E3F0046C037 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EBA291F276E3F0046C037 /* SourceEditorExtension.swift */; };
+		D27EBA2C1F276E3F0046C037 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EBA2B1F276E3F0046C037 /* SourceEditorCommand.swift */; };
+		D27EBA301F276E3F0046C037 /* XCamelizeExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D27EBA221F276E3F0046C037 /* XCamelizeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D27EBA361F276F700046C037 /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27EBA351F276F700046C037 /* CustomExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D27EBA021F276D750046C037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D27EB9E81F276D740046C037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27EB9EF1F276D750046C037;
+			remoteInfo = XCamelize;
+		};
+		D27EBA0D1F276D750046C037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D27EB9E81F276D740046C037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27EB9EF1F276D750046C037;
+			remoteInfo = XCamelize;
+		};
+		D27EBA2E1F276E3F0046C037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D27EB9E81F276D740046C037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D27EBA211F276E3F0046C037;
+			remoteInfo = XCamelizeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D27EBA341F276E3F0046C037 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D27EBA301F276E3F0046C037 /* XCamelizeExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D23534401F278014002F7147 /* XCamelize.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCamelize.entitlements; sourceTree = "<group>"; };
+		D23EE4D21F29DE9800965DE8 /* camelizeVideo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = camelizeVideo.gif; sourceTree = "<group>"; };
+		D27EB9F01F276D750046C037 /* XCamelize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCamelize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27EB9F31F276D750046C037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D27EB9F51F276D750046C037 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D27EB9F71F276D750046C037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D27EB9FA1F276D750046C037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D27EB9FC1F276D750046C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27EBA011F276D750046C037 /* XCamelizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCamelizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27EBA051F276D750046C037 /* XCamelizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCamelizeTests.swift; sourceTree = "<group>"; };
+		D27EBA071F276D750046C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27EBA0C1F276D750046C037 /* XCamelizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCamelizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27EBA101F276D750046C037 /* XCamelizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCamelizeUITests.swift; sourceTree = "<group>"; };
+		D27EBA121F276D750046C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27EBA221F276E3F0046C037 /* XCamelizeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XCamelizeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27EBA241F276E3F0046C037 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D27EBA281F276E3F0046C037 /* XCamelizeExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCamelizeExtension.entitlements; sourceTree = "<group>"; };
+		D27EBA291F276E3F0046C037 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		D27EBA2B1F276E3F0046C037 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		D27EBA2D1F276E3F0046C037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27EBA351F276F700046C037 /* CustomExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
+		D29D5F011F288154007A404B /* TestExtension.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestExtension.playground; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D27EB9ED1F276D750046C037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EB9FE1F276D750046C037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EBA091F276D750046C037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EBA1F1F276E3F0046C037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27EBA251F276E3F0046C037 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D27EB9E71F276D740046C037 = {
+			isa = PBXGroup;
+			children = (
+				D27EB9F21F276D750046C037 /* XCamelize */,
+				D27EBA041F276D750046C037 /* XCamelizeTests */,
+				D27EBA0F1F276D750046C037 /* XCamelizeUITests */,
+				D27EBA261F276E3F0046C037 /* XCamelizeExtension */,
+				D27EBA231F276E3F0046C037 /* Frameworks */,
+				D27EB9F11F276D750046C037 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D27EB9F11F276D750046C037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D27EB9F01F276D750046C037 /* XCamelize.app */,
+				D27EBA011F276D750046C037 /* XCamelizeTests.xctest */,
+				D27EBA0C1F276D750046C037 /* XCamelizeUITests.xctest */,
+				D27EBA221F276E3F0046C037 /* XCamelizeExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D27EB9F21F276D750046C037 /* XCamelize */ = {
+			isa = PBXGroup;
+			children = (
+				D23534401F278014002F7147 /* XCamelize.entitlements */,
+				D27EB9F31F276D750046C037 /* AppDelegate.swift */,
+				D27EB9F51F276D750046C037 /* ViewController.swift */,
+				D27EB9F71F276D750046C037 /* Assets.xcassets */,
+				D27EB9F91F276D750046C037 /* Main.storyboard */,
+				D27EB9FC1F276D750046C037 /* Info.plist */,
+				D23EE4D21F29DE9800965DE8 /* camelizeVideo.gif */,
+			);
+			path = XCamelize;
+			sourceTree = "<group>";
+		};
+		D27EBA041F276D750046C037 /* XCamelizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D27EBA051F276D750046C037 /* XCamelizeTests.swift */,
+				D27EBA071F276D750046C037 /* Info.plist */,
+			);
+			path = XCamelizeTests;
+			sourceTree = "<group>";
+		};
+		D27EBA0F1F276D750046C037 /* XCamelizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D27EBA101F276D750046C037 /* XCamelizeUITests.swift */,
+				D27EBA121F276D750046C037 /* Info.plist */,
+			);
+			path = XCamelizeUITests;
+			sourceTree = "<group>";
+		};
+		D27EBA231F276E3F0046C037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D27EBA241F276E3F0046C037 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D27EBA261F276E3F0046C037 /* XCamelizeExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D27EBA291F276E3F0046C037 /* SourceEditorExtension.swift */,
+				D27EBA2B1F276E3F0046C037 /* SourceEditorCommand.swift */,
+				D27EBA351F276F700046C037 /* CustomExtensions.swift */,
+				D29D5F011F288154007A404B /* TestExtension.playground */,
+				D27EBA2D1F276E3F0046C037 /* Info.plist */,
+				D27EBA271F276E3F0046C037 /* Supporting Files */,
+			);
+			path = XCamelizeExtension;
+			sourceTree = "<group>";
+		};
+		D27EBA271F276E3F0046C037 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D27EBA281F276E3F0046C037 /* XCamelizeExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D27EB9EF1F276D750046C037 /* XCamelize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27EBA151F276D750046C037 /* Build configuration list for PBXNativeTarget "XCamelize" */;
+			buildPhases = (
+				D27EB9EC1F276D750046C037 /* Sources */,
+				D27EB9ED1F276D750046C037 /* Frameworks */,
+				D27EB9EE1F276D750046C037 /* Resources */,
+				D27EBA341F276E3F0046C037 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D27EBA2F1F276E3F0046C037 /* PBXTargetDependency */,
+			);
+			name = XCamelize;
+			productName = XCamelize;
+			productReference = D27EB9F01F276D750046C037 /* XCamelize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D27EBA001F276D750046C037 /* XCamelizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27EBA181F276D750046C037 /* Build configuration list for PBXNativeTarget "XCamelizeTests" */;
+			buildPhases = (
+				D27EB9FD1F276D750046C037 /* Sources */,
+				D27EB9FE1F276D750046C037 /* Frameworks */,
+				D27EB9FF1F276D750046C037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D27EBA031F276D750046C037 /* PBXTargetDependency */,
+			);
+			name = XCamelizeTests;
+			productName = XCamelizeTests;
+			productReference = D27EBA011F276D750046C037 /* XCamelizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D27EBA0B1F276D750046C037 /* XCamelizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27EBA1B1F276D750046C037 /* Build configuration list for PBXNativeTarget "XCamelizeUITests" */;
+			buildPhases = (
+				D27EBA081F276D750046C037 /* Sources */,
+				D27EBA091F276D750046C037 /* Frameworks */,
+				D27EBA0A1F276D750046C037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D27EBA0E1F276D750046C037 /* PBXTargetDependency */,
+			);
+			name = XCamelizeUITests;
+			productName = XCamelizeUITests;
+			productReference = D27EBA0C1F276D750046C037 /* XCamelizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D27EBA211F276E3F0046C037 /* XCamelizeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27EBA311F276E3F0046C037 /* Build configuration list for PBXNativeTarget "XCamelizeExtension" */;
+			buildPhases = (
+				D27EBA1E1F276E3F0046C037 /* Sources */,
+				D27EBA1F1F276E3F0046C037 /* Frameworks */,
+				D27EBA201F276E3F0046C037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCamelizeExtension;
+			productName = XCamelizeExtension;
+			productReference = D27EBA221F276E3F0046C037 /* XCamelizeExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D27EB9E81F276D740046C037 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Starikov Yevgen";
+				TargetAttributes = {
+					D27EB9EF1F276D750046C037 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = BQ53A3X66Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+						};
+					};
+					D27EBA001F276D750046C037 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6C7J3STU8T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D27EB9EF1F276D750046C037;
+					};
+					D27EBA0B1F276D750046C037 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 6C7J3STU8T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D27EB9EF1F276D750046C037;
+					};
+					D27EBA211F276E3F0046C037 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CGNCEZ7BDS;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D27EB9EB1F276D740046C037 /* Build configuration list for PBXProject "XCamelize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D27EB9E71F276D740046C037;
+			productRefGroup = D27EB9F11F276D750046C037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D27EB9EF1F276D750046C037 /* XCamelize */,
+				D27EBA001F276D750046C037 /* XCamelizeTests */,
+				D27EBA0B1F276D750046C037 /* XCamelizeUITests */,
+				D27EBA211F276E3F0046C037 /* XCamelizeExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D27EB9EE1F276D750046C037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23EE4D31F29DE9800965DE8 /* camelizeVideo.gif in Resources */,
+				D27EB9F81F276D750046C037 /* Assets.xcassets in Resources */,
+				D27EB9FB1F276D750046C037 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EB9FF1F276D750046C037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EBA0A1F276D750046C037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EBA201F276E3F0046C037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D27EB9EC1F276D750046C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27EB9F61F276D750046C037 /* ViewController.swift in Sources */,
+				D27EB9F41F276D750046C037 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EB9FD1F276D750046C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27EBA061F276D750046C037 /* XCamelizeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EBA081F276D750046C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27EBA111F276D750046C037 /* XCamelizeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27EBA1E1F276E3F0046C037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27EBA361F276F700046C037 /* CustomExtensions.swift in Sources */,
+				D27EBA2A1F276E3F0046C037 /* SourceEditorExtension.swift in Sources */,
+				D27EBA2C1F276E3F0046C037 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D27EBA031F276D750046C037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27EB9EF1F276D750046C037 /* XCamelize */;
+			targetProxy = D27EBA021F276D750046C037 /* PBXContainerItemProxy */;
+		};
+		D27EBA0E1F276D750046C037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27EB9EF1F276D750046C037 /* XCamelize */;
+			targetProxy = D27EBA0D1F276D750046C037 /* PBXContainerItemProxy */;
+		};
+		D27EBA2F1F276E3F0046C037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D27EBA211F276E3F0046C037 /* XCamelizeExtension */;
+			targetProxy = D27EBA2E1F276E3F0046C037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D27EB9F91F276D750046C037 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D27EB9FA1F276D750046C037 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D27EBA131F276D750046C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D27EBA141F276D750046C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		D27EBA161F276D750046C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BQ53A3X66Q;
+				INFOPLIST_FILE = XCamelize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.compie.XCamelize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D27EBA171F276D750046C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BQ53A3X66Q;
+				INFOPLIST_FILE = XCamelize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.compie.XCamelize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D27EBA191F276D750046C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6C7J3STU8T;
+				INFOPLIST_FILE = XCamelizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rezor.XCamelizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCamelize.app/Contents/MacOS/XCamelize";
+			};
+			name = Debug;
+		};
+		D27EBA1A1F276D750046C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6C7J3STU8T;
+				INFOPLIST_FILE = XCamelizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rezor.XCamelizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XCamelize.app/Contents/MacOS/XCamelize";
+			};
+			name = Release;
+		};
+		D27EBA1C1F276D750046C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6C7J3STU8T;
+				INFOPLIST_FILE = XCamelizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rezor.XCamelizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XCamelize;
+			};
+			name = Debug;
+		};
+		D27EBA1D1F276D750046C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6C7J3STU8T;
+				INFOPLIST_FILE = XCamelizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rezor.XCamelizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XCamelize;
+			};
+			name = Release;
+		};
+		D27EBA321F276E3F0046C037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XCamelizeExtension/XCamelizeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CGNCEZ7BDS;
+				INFOPLIST_FILE = XCamelizeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.compie.XCamelize.XCamelizeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D27EBA331F276E3F0046C037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XCamelizeExtension/XCamelizeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CGNCEZ7BDS;
+				INFOPLIST_FILE = XCamelizeExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.compie.XCamelize.XCamelizeExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D27EB9EB1F276D740046C037 /* Build configuration list for PBXProject "XCamelize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27EBA131F276D750046C037 /* Debug */,
+				D27EBA141F276D750046C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27EBA151F276D750046C037 /* Build configuration list for PBXNativeTarget "XCamelize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27EBA161F276D750046C037 /* Debug */,
+				D27EBA171F276D750046C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27EBA181F276D750046C037 /* Build configuration list for PBXNativeTarget "XCamelizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27EBA191F276D750046C037 /* Debug */,
+				D27EBA1A1F276D750046C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27EBA1B1F276D750046C037 /* Build configuration list for PBXNativeTarget "XCamelizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27EBA1C1F276D750046C037 /* Debug */,
+				D27EBA1D1F276D750046C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27EBA311F276E3F0046C037 /* Build configuration list for PBXNativeTarget "XCamelizeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27EBA321F276E3F0046C037 /* Debug */,
+				D27EBA331F276E3F0046C037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D27EB9E81F276D740046C037 /* Project object */;
+}
